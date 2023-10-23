@@ -1,6 +1,6 @@
 CREATE TABLE students
 (
-    StudentId INT PRIMARY KEY NOT NULL,
+    StudentId INT PRIMARY KEY AUTOINCREMENT NOT NULL,
     FirstName VARCHAR(80) NOT NULL,
     LastName VARCHAR(80) NOT NULL,
     BirthDay DATE NOT NUll,
