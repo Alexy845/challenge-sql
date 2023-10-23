@@ -1,2 +1,2 @@
-ALTER TABLE genres
-ADD Electro
+INSERT INTO genres
+VALUES ('Electro')
