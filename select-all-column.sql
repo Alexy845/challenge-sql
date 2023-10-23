@@ -1,0 +1,1 @@
+SELECT Firstname, Lastname, Title FROM employees;
