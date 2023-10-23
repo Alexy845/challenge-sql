@@ -1,6 +1,4 @@
 UPDATE employees
-set Title = 'IT Manager'
+set Title = 'IT Manager',
+    ReportsTo = 1
 Where EmployeeId = 7;
-UPDATE employees
-set Title ='IT Staff'
-where 1
