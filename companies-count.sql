@@ -1,1 +1,1 @@
-SELECT COUNT(Company) AS NbCompagnies FROM customers
+SELECT COUNT(Company) AS NbCompanies FROM customers
