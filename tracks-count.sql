@@ -1,6 +1,6 @@
 SELECT
     genres.Name AS Genre,
-    COUNT(TrackId) AS NumberOfTracks
+    COUNT(tracks.TrackId) AS NumberOfTracks
 FROM
     Genres
 JOIN
