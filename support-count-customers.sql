@@ -1,6 +1,4 @@
 SELECT
-    e.FirstName,
-    e.LastName,
     UPPER(e.FirstName || ' ' || e.LastName) AS FullName,
     COUNT(c.CustomerId) AS NumberOfCustomers
 FROM
