@@ -4,4 +4,4 @@ SELECT FirstName,
 FROM
     employees
 ORDER BY
-    ApproximateAge
+    ApproximateAge ASC;
