@@ -4,6 +4,6 @@ SELECT
 FROM
     Genres
 JOIN
-    Tracks  ON tracks.GenreId = genres.GenreId
+    Tracks  ON genres.GenreId = tracks.GenreId
 GROUP BY
     Genre;
