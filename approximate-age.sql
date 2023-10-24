@@ -1,8 +1,7 @@
-SELECT
-    FirstName,
-    LastName,
-    (strftime('%Y', 'now') - strftime('%Y', BirthDate)) - (strftime('%m-%d', 'now') < strftime('%m-%d', BirthDate)) AS ApproximateAge
+SELECT FirstName,
+       LastName,
+       strftime(HireDate) - strftime(BirthDate) AS ApproximateAge
 FROM
-    Employees
+    employees
 ORDER BY
-    ApproximateAge ASC;
+    ApproximateAge
