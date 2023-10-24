@@ -1,5 +1,5 @@
 UPDATE Invoices
-SET Total = Total +
+SET Total =
     CASE
         WHEN BillingCity = 'France' THEN Total + 3
         WHEN BillingCity = 'USA' THEN Total + 5
