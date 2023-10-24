@@ -1,9 +1,9 @@
 SELECT
-    genres.Name AS Genre,
+    genres.Name AS Name,
     COUNT(tracks.TrackId) AS NumberOfTracks
 FROM
-    Genres
+    genres
 JOIN
     Tracks  ON genres.GenreId = tracks.GenreId
 GROUP BY
-    Genre;
+    genres.Name;
