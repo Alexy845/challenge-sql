@@ -1,11 +1,7 @@
-SELECT
-    InvoiceId,
-    Total,
+UPDATE Invoices
+SET Total = Total +
     CASE
-        WHEN Total < 5 THEN 'Price lower than 5$'
-        WHEN Total < 10 THEN 'Price lower than 10$'
-        ELSE 'Price greater than 10$'
-    END AS 'CASE'
-FROM
-    Invoices
-LIMIT 100;
+        WHEN BillingCity = 'France' THEN 3
+        WHEN BillingCity = 'USA' THEN 5
+        ELSE 1
+    END;
