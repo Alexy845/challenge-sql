@@ -1,7 +1,9 @@
 SELECT
-    upper(LastName) AS LastNameUpper, FirstName
+    UPPER(LastName) AS LastNameUpper,
+    FirstName
 FROM
-    customers
+    Customers
 WHERE
-    length(FirstName) > 5 AND length(LastName)
-ORDER BY LastName ASC
+    LENGTH(FirstName) > 5 AND LENGTH(LastName) > 5
+ORDER BY
+    LastName ASC;
