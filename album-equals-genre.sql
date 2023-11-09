@@ -1,7 +1,7 @@
 SELECT *
-FROM tracks
+FROM genres
 WHERE GenreId IN (
     SELECT GenreId
-    FROM genres
-    WHERE genres.Name = tracks.Name
+    FROM albums
+    WHERE genres.Name = albums.AlbumId
 );
