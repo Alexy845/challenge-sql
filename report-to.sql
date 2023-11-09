@@ -1,7 +1,7 @@
 SELECT
     e1.EmployeeId AS EmployeeId,
-    e1.FirstName || ' ' || e1.LastName AS EmployeeFullName,
-    e2.FirstName || ' ' || e2.LastName AS ReportsToFullName
+    e1.FirstName || ' ' || e1.LastName AS EmployeeName,
+    e2.FirstName || ' ' || e2.LastName AS ReportsTo
 FROM
     employees e1
 LEFT JOIN
