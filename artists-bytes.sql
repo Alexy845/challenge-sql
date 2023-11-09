@@ -11,3 +11,4 @@ INNER JOIN
     tracks ON albums.AlbumId = tracks.AlbumId
 WHERE
     albums.Title = 'American Idiot';
+
