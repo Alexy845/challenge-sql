@@ -2,7 +2,7 @@ SELECT
     artists.Name AS ArtistName,
     albums.Title AS AlbumName,
     tracks.Name AS TrackName,
-    ROUND(tracks.Bytes / 1048576, 2) || ' MB' AS MegaBytes
+    ROUND(tracks.Bytes / 1000000.0, 2) || ' MB' AS MegaBytes
 FROM
     artists
 INNER JOIN
